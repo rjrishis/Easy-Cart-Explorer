@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { productContext } from "../utils/Context";
 import { nanoid } from "nanoid";
 import { useNavigate, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 const Edit = () => {
   const [products, setProducts] = useContext(productContext);
   const { id } = useParams();
@@ -55,12 +56,13 @@ const Edit = () => {
     copyData[pi] = { ...products[pi], ...productt }
     setProducts(copyData);
     localStorage.setItem("products", JSON.stringify(copyData));
+    toast.success("product edited successfully");
     navigate("/");
   };
   return (
     <>
       <h1 className="absolute top-16 left-[19%] uppercase font-bold text-2xl">
-        Add New product:
+        Edit product:
       </h1>
 
       <form
@@ -130,7 +132,7 @@ const Edit = () => {
           type="submit"
           className=" mt-1 w-[90%] border px-5 py-3 rounded border-blue-200 text-blue-300 flex"
         >
-          ADD New Product
+          Edit Product
         </button>
       </form>
     </>
