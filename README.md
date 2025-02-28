@@ -1,4 +1,4 @@
-# 🛍️ React FakeStore API Project
+# 🛍️ Easy Cart Explorer
 
 ## 📌 Overview
 This project is a React-based e-commerce web application that integrates with the [FakeStore API](https://fakestoreapi.com/) to provide users with a seamless shopping experience. Users can:
@@ -31,8 +31,8 @@ Follow these steps to set up the project on your local machine:
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/your-username/react-fakestore.git
-   cd react-fakestore
+   git clone https://github.com/rjrishis/Easy-Cart-Explorer.git
+   cd Easy-Cart-Explorer
    ```
 2. **Install Dependencies**
    ```sh
