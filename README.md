@@ -8,11 +8,6 @@ This project is a React-based e-commerce web application that integrates with th
 - Filter products using the sidebar categories.
 - Quickly add new products using the "Add Product" button on the home page.
 
-## Screenshots
-![Refokus Website Clone Preview](images/Home.png)
-![Refokus Website Clone Preview-1](images/AddProduct.png)
-![Refokus Website Clone Preview-2](images/EditProduct.png)
-
 ## 🚀 Features
 - **Dynamic Product Management**: Users can create, read, update, and delete products in real time.
 - **Category-Based Filtering**: Sidebar allows users to filter products efficiently.
@@ -56,7 +51,10 @@ Follow these steps to set up the project on your local machine:
 - Receive **real-time notifications** for actions like adding, editing, or deleting products.
 
 ## 📷 Screenshots
-*(Include screenshots of your application here to showcase UI/UX)*
+![Easy-Cart-Explorer Home](images/Home.png)
+![Easy-Cart-Explorer ProductDetails](images/ProductDetails.png)
+![Easy-Cart-Explorer AddProduct](images/AddProduct.png)
+![Easy-Cart-Explorer EditProduct](images/EditProduct.png)
 
 ## 🚀 Deployment
 This project can be easily deployed using platforms like Vercel or Netlify.
