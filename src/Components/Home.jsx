@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 import Axios from "../utils/Axios";
 const Home = () => {
   const [products] = useContext(productContext);
-  // console.log(products)
+  console.log(products)
   const { search } = useLocation();
   const category = decodeURIComponent(search.split("=")[1]);
   const [filteredProducts, setfilteredProducts] = useState(null);

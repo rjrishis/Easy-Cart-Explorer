@@ -6,11 +6,11 @@ const Edit = () => {
   const [products, setProducts] = useContext(productContext);
   const { id } = useParams();
   const [productt, setProductt] = useState({
-    title:'',
-    image:'',
-    category:'',
-    price:'',
-    description:'',
+    title: '',
+    image: '',
+    category: '',
+    price: '',
+    description: '',
   });
   //   const [title, setTitle] = useState("");
   //   const [image, setImage] = useState("");
@@ -21,10 +21,10 @@ const Edit = () => {
   useEffect(() => {
     setProductt(products.filter((p) => p.id == id)[0]);
   }, [id]);
-  const changeHandler = (e)=>{
-    setProductt({...productt ,[e.target.name]:e.target.value})
+  const changeHandler = (e) => {
+    setProductt({ ...productt, [e.target.name]: e.target.value })
   }
-  
+
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -32,7 +32,7 @@ const Edit = () => {
       productt.title.trim().length < 5 ||
       productt.image.trim().length < 5 ||
       productt.category.trim().length < 5 ||
-      productt.price.trim().length < 1 ||
+      String(productt.price).trim().length < 1 ||
       productt.description.trim().length < 5
     ) {
       alert("Please fill all the fields");
@@ -50,12 +50,12 @@ const Edit = () => {
     // setProducts([...products, product]);
     // localStorage.setItem("products", JSON.stringify([...products, product]));
     // navigate("/");
-     const pi = products.findIndex((p) => p.id == id);
-     const copyData = [...products];
-     copyData[pi] = {...products[pi],...productt}
-     setProducts(copyData);
-     localStorage.setItem("products", JSON.stringify(copyData));
-     navigate("/");
+    const pi = products.findIndex((p) => p.id == id);
+    const copyData = [...products];
+    copyData[pi] = { ...products[pi], ...productt }
+    setProducts(copyData);
+    localStorage.setItem("products", JSON.stringify(copyData));
+    navigate("/");
   };
   return (
     <>

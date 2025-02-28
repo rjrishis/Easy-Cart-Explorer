@@ -4,6 +4,7 @@ import Axios from "../utils/Axios";
 import Loading from "./Loading";
 import { useContext } from "react";
 import { productContext } from "../utils/Context";
+import { toast } from "react-toastify";
 
 const Detail = () => {
   const [prod, setProd] = useState(null);
@@ -27,6 +28,7 @@ const Detail = () => {
   }, []);
   const deleteHandler = (id) => {
     const filteredProducts = products.filter((p) => p.id !== id);
+    toast.success("Item Deleted Successfully")
     setProducts(filteredProducts);  // Update the global state
     setProd(null);  // Update the local state
     localStorage.setItem('products', JSON.stringify(filteredProducts));
