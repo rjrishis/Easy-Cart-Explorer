@@ -8,6 +8,11 @@ This project is a React-based e-commerce web application that integrates with th
 - Filter products using the sidebar categories.
 - Quickly add new products using the "Add Product" button on the home page.
 
+## Screenshots
+![Refokus Website Clone Preview](images/Home.png)
+![Refokus Website Clone Preview-1](images/AddProduct.png)
+![Refokus Website Clone Preview-2](images/EditProduct.png)
+
 ## 🚀 Features
 - **Dynamic Product Management**: Users can create, read, update, and delete products in real time.
 - **Category-Based Filtering**: Sidebar allows users to filter products efficiently.
